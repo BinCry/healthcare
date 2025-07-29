@@ -1,0 +1,484 @@
+/* General Body Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7f6;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+header {
+    background-color: #2a6a4d; /* Darker green */
+    color: white;
+    padding: 1rem 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: white;
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #a4e4c2; /* Lighter green on hover */
+}
+
+/* Hamburger Menu for Mobile */
+.hamburger {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.hamburger .line {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    transition: all 0.3s ease;
+}
+
+/* Main Content Layout */
+main {
+    flex: 1; /* Allows main content to grow and push footer down */
+    padding: 30px 0;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 40px 20px;
+    background: linear-gradient(to right, #4CAF50, #81C784); /* Green gradient */
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.hero h1 {
+    font-size: 2.8rem;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+/* Card Styles */
+.card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+}
+
+.card h2 {
+    color: #2a6a4d;
+    font-size: 1.8rem;
+    margin-top: 0;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 10px;
+}
+
+/* Diagnosis Section */
+.diagnosis-section textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    min-height: 120px;
+    box-sizing: border-box; /* Include padding in width */
+    margin-bottom: 20px;
+    resize: vertical;
+}
+
+.diagnosis-section .btn-primary {
+    display: block;
+    width: 100%;
+    padding: 15px 25px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.diagnosis-section .btn-primary:hover {
+    background-color: #45a049;
+    transform: translateY(-2px);
+}
+
+.result-box {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #e8f5e9; /* Light green background */
+    border: 1px solid #a4e4c2;
+    border-radius: 8px;
+    min-height: 100px;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.result-box strong {
+    color: #2a6a4d;
+}
+
+.result-box ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+.result-box li {
+    margin-bottom: 5px;
+}
+
+.result-box .error-message {
+    color: #d32f2f;
+    font-weight: bold;
+    text-align: center;
+}
+
+.result-box .warning-message {
+    color: #f57c00;
+    font-weight: bold;
+    text-align: center;
+}
+
+.result-box .placeholder-text {
+    color: #888;
+    text-align: center;
+    font-style: italic;
+    padding: 20px;
+}
+
+/* Loading Spinner */
+.loading-spinner {
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-top: 4px solid #4CAF50;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    animation: spin 1s linear infinite;
+    margin: 20px auto;
+}
+
+.hidden {
+    display: none;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+
+/* Health Tip Section */
+.health-tip-section {
+    text-align: center;
+    background-color: #e3f2fd; /* Light blue */
+    border: 1px solid #90caf9;
+}
+
+.health-tip {
+    font-size: 1.15rem;
+    font-style: italic;
+    color: #3f51b5;
+    min-height: 50px; /* Prevent layout shift */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Fade animation for health tips */
+.fade-out {
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+}
+
+.fade-in {
+    opacity: 1;
+    transition: opacity 0.5s ease-in;
+}
+
+/* Diseases List Page Styles */
+.search-section input[type="text"] {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.disease-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+.disease-card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.disease-card:hover {
+    transform: translateY(-5px);
+}
+
+.disease-card h3 {
+    color: #2a6a4d;
+    font-size: 1.6rem;
+    margin-top: 0;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 10px;
+}
+
+.disease-card p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.disease-card .card-section {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px dashed #eee;
+}
+
+.disease-card .card-section:first-child {
+    border-top: none;
+    padding-top: 0;
+}
+
+.disease-card .card-section h4 {
+    color: #4CAF50;
+    font-size: 1.2rem;
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+
+.disease-card ul {
+    list-style: none; /* Remove default bullet */
+    padding: 0;
+    margin: 0;
+}
+
+.disease-card li {
+    margin-bottom: 5px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.disease-card li::before {
+    content: '•'; /* Custom bullet point */
+    color: #4CAF50;
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}
+
+.no-results-message {
+    text-align: center;
+    color: #888;
+    font-size: 1.2rem;
+    padding: 50px 0;
+}
+
+
+/* FAQ Page Styles (Accordion) */
+.accordion-item {
+    margin-bottom: 15px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden; /* For accordion effect */
+}
+
+.accordion-header {
+    background-color: #f7f7f7;
+    padding: 18px 25px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+    transition: background-color 0.3s ease;
+}
+
+.accordion-header:hover {
+    background-color: #eef;
+}
+
+.accordion-header h3 {
+    margin: 0;
+    font-size: 1.15rem;
+    color: #333;
+}
+
+.accordion-header .icon {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #4CAF50;
+    transition: transform 0.3s ease;
+}
+
+.accordion-item.active .accordion-header .icon {
+    transform: rotate(45deg); /* Change + to X or rotate */
+}
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    padding: 0 25px;
+    background-color: white;
+}
+
+.accordion-item.active .accordion-content {
+    max-height: 200px; /* Adjust as needed, or use scrollHeight in JS */
+    padding: 15px 25px; /* Add padding when open */
+}
+
+.accordion-content p {
+    margin: 0 0 10px 0;
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: auto; /* Pushes footer to the bottom */
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px; /* Adjust based on header height */
+        left: 0;
+        background-color: #2a6a4d;
+        height: calc(100vh - 60px); /* Full height minus header */
+        transform: translateX(-100%);
+        transition: transform 0.3s ease-in-out;
+        padding: 20px 0;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .nav-links.nav-active {
+        transform: translateX(0);
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .hamburger.toggle .line:nth-child(1) {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .hamburger.toggle .line:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.toggle .line:nth-child(3) {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .card {
+        padding: 20px;
+    }
+
+    .diagnosis-section textarea,
+    .diagnosis-section .btn-primary {
+        font-size: 1rem;
+        padding: 12px;
+    }
+
+    .disease-list {
+        grid-template-columns: 1fr; /* Stack cards on small screens */
+    }
+
+    .disease-card {
+        padding: 20px;
+    }
+
+    .disease-card h3 {
+        font-size: 1.4rem;
+    }
+
+    .accordion-header {
+        padding: 15px 20px;
+    }
+    .accordion-header h3 {
+        font-size: 1rem;
+    }
+    .accordion-content {
+        padding: 0 20px;
+    }
+    .accordion-item.active .accordion-content {
+        padding: 10px 20px;
+    }
+}

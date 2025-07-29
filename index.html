@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chẩn đoán Bệnh - Trợ lý Sức khỏe AI</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">Sức Khỏe AI</a>
+            <nav>
+                <div class="hamburger">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Chẩn đoán</a></li>
+                    <li><a href="diseases.html">Danh sách Bệnh</a></li>
+                    <li><a href="faq.html">Hỏi & Đáp</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="hero">
+            <h1>Chẩn đoán sơ bộ bệnh từ AI</h1>
+            <p>Nhập các triệu chứng bạn đang gặp phải và để AI đưa ra gợi ý ban đầu.</p>
+        </section>
+
+        <section class="diagnosis-section card">
+            <h2>Nhập triệu chứng của bạn</h2>
+            <textarea id="symptomsInput" placeholder="Ví dụ: sốt nhẹ, ho khan, đau họng, mệt mỏi..."></textarea>
+            <button id="diagnoseButton" class="btn-primary">Chẩn đoán</button>
+            <div id="loadingIndicator" class="loading-spinner hidden"></div>
+            <div id="resultOutput" class="result-box">
+                <p class="placeholder-text">Kết quả chẩn đoán sẽ hiển thị ở đây.</p>
+            </div>
+        </section>
+
+        <section class="health-tip-section card">
+            <h2>Lời khuyên sức khỏe cho bạn</h2>
+            <p id="healthTip" class="health-tip"></p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Trợ lý Sức khỏe AI. Mọi thông tin chỉ mang tính tham khảo, không thay thế chẩn đoán y tế.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

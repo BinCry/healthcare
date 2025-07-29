@@ -1,0 +1,189 @@
+[
+    {
+        "id": "benh_cam_cum",
+        "name": "Cảm cúm thông thường",
+        "description": "Bệnh nhiễm trùng đường hô hấp do virus gây ra, thường có triệu chứng sốt, ho, sổ mũi, đau họng, mệt mỏi.",
+        "symptoms": ["sốt", "ho", "sổ mũi", "đau họng", "mệt mỏi", "đau nhức cơ thể"],
+        "medications": [
+            {"name": "Paracetamol", "usage": "Giảm sốt, giảm đau.", "note": "Không dùng quá liều."},
+            {"name": "Thuốc ho (ví dụ: Codein, Dextromethorphan)", "usage": "Giảm ho.", "note": "Tham khảo ý kiến bác sĩ."},
+            {"name": "Nước muối sinh lý", "usage": "Rửa mũi, họng.", "note": "Giúp thông thoáng đường thở."}
+        ],
+        "prevention": ["Rửa tay thường xuyên", "Tránh chạm tay vào mặt", "Tiêm vắc-xin cúm hàng năm"]
+    },
+    {
+        "id": "viem_hong",
+        "name": "Viêm họng",
+        "description": "Viêm nhiễm ở họng, gây đau rát khi nuốt.",
+        "symptoms": ["đau họng", "khó nuốt", "ho", "sốt nhẹ", "amidan sưng đỏ"],
+        "medications": [
+            {"name": "Thuốc giảm đau, hạ sốt (Paracetamol)", "usage": "Giảm đau và sốt.", "note": ""},
+            {"name": "Viên ngậm đau họng", "usage": "Làm dịu cổ họng.", "note": ""},
+            {"name": "Nước muối ấm", "usage": "Súc miệng.", "note": "Giúp sát khuẩn."}
+        ],
+        "prevention": ["Giữ ấm cổ họng", "Tránh đồ ăn lạnh, cay nóng", "Vệ sinh răng miệng"]
+    },
+    {
+        "id": "dau_da_day",
+        "name": "Đau dạ dày (viêm loét dạ dày)",
+        "description": "Tình trạng viêm hoặc loét niêm mạc dạ dày, gây đau vùng thượng vị.",
+        "symptoms": ["đau bụng thượng vị", "ợ chua", "buồn nôn", "chướng bụng", "khó tiêu"],
+        "medications": [
+            {"name": "Thuốc kháng axit (ví dụ: Maalox)", "usage": "Trung hòa axit dạ dày.", "note": "Uống sau ăn hoặc khi đau."},
+            {"name": "Thuốc ức chế bơm proton (ví dụ: Omeprazole)", "usage": "Giảm tiết axit.", "note": "Dùng theo chỉ định bác sĩ."}
+        ],
+        "prevention": ["Ăn uống đúng giờ", "Tránh căng thẳng", "Hạn chế đồ ăn cay nóng, chua"]
+    },
+    {
+        "id": "dau_dau",
+        "name": "Đau đầu (Căng thẳng)",
+        "description": "Đau nhức hoặc cảm giác căng ở đầu, thường do căng thẳng hoặc mệt mỏi.",
+        "symptoms": ["đau đầu", "căng thái dương", "nhức đầu"],
+        "medications": [
+            {"name": "Paracetamol", "usage": "Giảm đau.", "note": "Không dùng quá liều."},
+            {"name": "Ibuprofen", "usage": "Giảm đau, kháng viêm.", "note": "Đọc kỹ hướng dẫn sử dụng."}
+        ],
+        "prevention": ["Nghỉ ngơi đủ giấc", "Hạn chế căng thẳng", "Uống đủ nước"]
+    },
+    {
+        "id": "sot_xuat_huyet",
+        "name": "Sốt xuất huyết Dengue",
+        "description": "Bệnh truyền nhiễm cấp tính do virus Dengue gây ra, lây truyền qua muỗi vằn đốt. Bệnh có thể gây sốt cao, xuất huyết và các biến chứng nguy hiểm.",
+        "symptoms": ["sốt cao đột ngột", "đau đầu dữ dội", "đau nhức hốc mắt", "đau cơ", "đau khớp", "phát ban", "buồn nôn", "nôn", "chảy máu cam", "chảy máu chân răng"],
+        "medications": [
+            {"name": "Paracetamol", "usage": "Giảm sốt, giảm đau.", "note": "Không dùng Aspirin hoặc Ibuprofen vì có thể làm tăng nguy cơ chảy máu."},
+            {"name": "Oresol hoặc các dung dịch bù nước và điện giải", "usage": "Bù nước và điện giải khi sốt cao, nôn ói.", "note": ""}
+        ],
+        "prevention": ["Diệt muỗi, lăng quăng/bọ gậy", "Ngủ màn, mặc quần áo dài tay", "Sử dụng thuốc chống muỗi", "Loại bỏ các vật dụng chứa nước đọng quanh nhà"]
+    },
+    {
+        "id": "tieu_chay",
+        "name": "Tiêu chảy",
+        "description": "Tình trạng đi ngoài phân lỏng hoặc rất lỏng nhiều lần trong ngày, thường do nhiễm trùng đường ruột.",
+        "symptoms": ["đi ngoài phân lỏng", "đau bụng quặn thắt", "buồn nôn", "nôn", "sốt nhẹ", "mất nước"],
+        "medications": [
+            {"name": "Oresol hoặc các dung dịch bù nước và điện giải", "usage": "Bù đủ nước và điện giải để tránh mất nước.", "note": ""},
+            {"name": "Thuốc cầm tiêu chảy (ví dụ: Loperamide)", "usage": "Dùng khi cần thiết, nhưng cần thận trọng và theo chỉ định bác sĩ. Không dùng cho trẻ em dưới 6 tuổi.", "note": ""},
+            {"name": "Men vi sinh (Probiotics)", "usage": "Giúp cân bằng hệ vi khuẩn đường ruột.", "note": ""}
+        ],
+        "prevention": ["Ăn chín, uống sôi", "Rửa tay thường xuyên bằng xà phòng", "Bảo quản thực phẩm đúng cách"]
+    },
+    {
+        "id": "thuy_dau",
+        "name": "Thủy đậu (Trái rạ)",
+        "description": "Bệnh truyền nhiễm cấp tính do virus Varicella Zoster gây ra, đặc trưng bởi phát ban mụn nước trên da.",
+        "symptoms": ["sốt nhẹ", "mệt mỏi", "nổi mụn nước khắp cơ thể", "ngứa dữ dội", "đau đầu"],
+        "medications": [
+            {"name": "Acyclovir", "usage": "Thuốc kháng virus, có thể được chỉ định trong một số trường hợp để giảm mức độ nặng của bệnh.", "note": "Theo chỉ định bác sĩ."},
+            {"name": "Thuốc giảm ngứa (ví dụ: Chlorpheniramine, Calamine lotion)", "usage": "Giảm cảm giác ngứa khó chịu.", "note": ""},
+            {"name": "Paracetamol", "usage": "Giảm sốt, giảm đau.", "note": ""}
+        ],
+        "prevention": ["Tiêm vắc-xin thủy đậu", "Tránh tiếp xúc với người bệnh", "Vệ sinh cá nhân sạch sẽ"]
+    },
+    {
+        "id": "viem_phe_quan",
+        "name": "Viêm phế quản",
+        "description": "Viêm nhiễm các ống phế quản trong phổi, thường gây ho có đờm. Có thể là cấp tính hoặc mạn tính.",
+        "symptoms": ["ho (có đờm)", "khò khè", "khó thở", "đau tức ngực", "sốt nhẹ", "mệt mỏi"],
+        "medications": [
+            {"name": "Thuốc long đờm (ví dụ: Acetylcysteine, Bromhexine)", "usage": "Giúp làm loãng đờm, dễ khạc ra ngoài.", "note": ""},
+            {"name": "Thuốc giãn phế quản (ví dụ: Salbutamol)", "usage": "Được chỉ định trong trường hợp có co thắt phế quản, gây khó thở.", "note": "Theo chỉ định bác sĩ."},
+            {"name": "Thuốc kháng sinh", "usage": "Chỉ dùng khi có bằng chứng nhiễm khuẩn, theo chỉ định của bác sĩ.", "note": "Theo chỉ định bác sĩ."},
+            {"name": "Paracetamol", "usage": "Giảm sốt, giảm đau.", "note": ""}
+        ],
+        "prevention": ["Tránh khói thuốc lá và các chất kích thích đường hô hấp", "Giữ ấm cơ thể", "Tiêm vắc-xin cúm và phế cầu khuẩn (nếu cần)"]
+    },
+    {
+        "id": "dau_mat_do",
+        "name": "Đau mắt đỏ (Viêm kết mạc)",
+        "description": "Tình trạng viêm lớp màng trong suốt phủ mặt trong mí mắt và tròng trắng mắt, gây đỏ mắt, ngứa và tiết dịch.",
+        "symptoms": ["mắt đỏ", "ngứa mắt", "cộm xốn mắt", "chảy nước mắt", "tiết ghèn", "sưng mí mắt"],
+        "medications": [
+            {"name": "Nước muối sinh lý 0.9%", "usage": "Rửa mắt thường xuyên để làm sạch ghèn và giảm kích ứng.", "note": ""},
+            {"name": "Thuốc nhỏ mắt kháng sinh (ví dụ: Tobramycin, Chloramphenicol)", "usage": "Dùng khi có nhiễm khuẩn, theo chỉ định bác sĩ.", "note": "Theo chỉ định bác sĩ."},
+            {"name": "Thuốc nhỏ mắt kháng virus (ví dụ: Acyclovir)", "usage": "Được chỉ định trong trường hợp viêm kết mạc do virus Herpes.", "note": "Theo chỉ định bác sĩ."}
+        ],
+        "prevention": ["Rửa tay thường xuyên", "Không chạm tay lên mắt", "Không dùng chung khăn mặt, thuốc nhỏ mắt với người khác", "Tránh bơi ở những nơi công cộng không đảm bảo vệ sinh"]
+    },
+    {
+        "id": "cum_a",
+        "name": "Cúm A (Cúm mùa)",
+        "description": "Bệnh nhiễm trùng đường hô hấp cấp tính do virus cúm A gây ra, có khả năng lây lan nhanh và gây ra các đợt dịch lớn.",
+        "symptoms": ["sốt cao", "đau đầu", "đau mỏi cơ toàn thân", "ho khan", "đau họng", "sổ mũi, nghẹt mũi", "mệt mỏi", "ớn lạnh"],
+        "medications": [
+            {"name": "Paracetamol", "usage": "Giảm sốt, giảm đau.", "note": "Không dùng quá liều."},
+            {"name": "Thuốc kháng virus (ví dụ: Oseltamivir)", "usage": "Được chỉ định trong trường hợp nặng hoặc có nguy cơ biến chứng, dùng theo chỉ định bác sĩ.", "note": "Dùng theo chỉ định bác sĩ trong 48 giờ đầu."},
+            {"name": "Thuốc ho, thuốc nhỏ mũi", "usage": "Giảm triệu chứng.", "note": ""}
+        ],
+        "prevention": ["Tiêm vắc-xin cúm hàng năm", "Rửa tay thường xuyên", "Tránh tiếp xúc gần với người bệnh", "Đeo khẩu trang khi ra ngoài hoặc khi tiếp xúc người bệnh"]
+    },
+    {
+        "id": "viem_tai_giua",
+        "name": "Viêm tai giữa",
+        "description": "Viêm nhiễm ở tai giữa, thường do vi khuẩn hoặc virus, gây đau tai và có thể ảnh hưởng đến thính giác.",
+        "symptoms": ["đau tai", "chảy dịch tai", "sốt", "giảm thính lực", "ù tai", "chóng mặt (ít gặp)"],
+        "medications": [
+            {"name": "Thuốc giảm đau, hạ sốt (Paracetamol, Ibuprofen)", "usage": "Giảm đau và sốt.", "note": ""},
+            {"name": "Thuốc kháng sinh", "usage": "Chỉ dùng khi có nhiễm khuẩn và theo chỉ định của bác sĩ.", "note": "Dùng đủ liều, đúng giờ."},
+            {"name": "Thuốc nhỏ tai", "usage": "Chỉ dùng khi có chỉ định của bác sĩ.", "note": ""}
+        ],
+        "prevention": ["Vệ sinh tai mũi họng sạch sẽ", "Tránh nước vào tai khi tắm, bơi", "Điều trị dứt điểm các bệnh hô hấp trên"]
+    },
+    {
+        "id": "viem_duong_tiet_nieu",
+        "name": "Viêm đường tiết niệu",
+        "description": "Nhiễm trùng ở bất kỳ phần nào của hệ tiết niệu, bao gồm thận, niệu quản, bàng quang và niệu đạo. Phổ biến hơn ở phụ nữ.",
+        "symptoms": ["tiểu buốt", "tiểu rắt", "tiểu nhiều lần", "đau bụng dưới", "nước tiểu đục hoặc có mùi hôi", "sốt (trong trường hợp nặng)"],
+        "medications": [
+            {"name": "Thuốc kháng sinh", "usage": "Điều trị nhiễm khuẩn, theo chỉ định của bác sĩ.", "note": "Dùng đủ liều, đúng giờ để tránh kháng thuốc."},
+            {"name": "Thuốc giảm đau (Paracetamol)", "usage": "Giảm đau.", "note": ""}
+        ],
+        "prevention": ["Uống đủ nước", "Vệ sinh cá nhân sạch sẽ, đúng cách", "Đi tiểu ngay sau khi quan hệ tình dục", "Không nhịn tiểu"]
+    },
+    {
+        "id": "dau_lung",
+        "name": "Đau lưng",
+        "description": "Đau ở vùng lưng, có thể từ nhẹ đến nặng, thường do căng cơ, chấn thương hoặc các vấn đề về xương khớp.",
+        "symptoms": ["đau âm ỉ hoặc dữ dội ở lưng", "cứng lưng", "khó khăn khi vận động", "tê bì hoặc đau lan xuống chân (thoái hóa cột sống, thoát vị đĩa đệm)"],
+        "medications": [
+            {"name": "Thuốc giảm đau (Paracetamol, Ibuprofen)", "usage": "Giảm đau.", "note": ""},
+            {"name": "Thuốc giãn cơ", "usage": "Giảm co thắt cơ.", "note": "Theo chỉ định bác sĩ."},
+            {"name": "Thuốc giảm đau tại chỗ (dạng gel, miếng dán)", "usage": "Giảm đau cục bộ.", "note": ""}
+        ],
+        "prevention": ["Giữ tư thế đúng khi làm việc, nghỉ ngơi", "Tập thể dục thường xuyên để tăng cường cơ lưng", "Tránh nâng vật nặng sai tư thế", "Duy trì cân nặng hợp lý"]
+    },
+    {
+        "id": "viem_khop",
+        "name": "Viêm khớp",
+        "description": "Tình trạng viêm một hoặc nhiều khớp, gây đau, sưng và cứng khớp, thường gặp ở người lớn tuổi.",
+        "symptoms": ["đau khớp", "sưng khớp", "cứng khớp (đặc biệt vào buổi sáng)", "nóng đỏ tại khớp", "giảm khả năng vận động của khớp"],
+        "medications": [
+            {"name": "Thuốc giảm đau, kháng viêm không steroid (NSAIDs - ví dụ: Ibuprofen, Naproxen)", "usage": "Giảm đau và viêm.", "note": "Có thể gây tác dụng phụ dạ dày."},
+            {"name": "Thuốc tiêm khớp (Corticosteroid)", "usage": "Giảm viêm nhanh chóng, thường được tiêm tại chỗ.", "note": "Theo chỉ định bác sĩ."},
+            {"name": "Thuốc điều trị cơ bản (DMARDs - trong viêm khớp dạng thấp)", "usage": "Kiểm soát bệnh và ngăn ngừa tổn thương khớp.", "note": "Theo chỉ định bác sĩ."}
+        ],
+        "prevention": ["Duy trì cân nặng hợp lý", "Tập thể dục đều đặn, phù hợp với khớp", "Chế độ ăn uống lành mạnh, bổ sung Omega-3", "Tránh các chấn thương khớp"]
+    },
+    {
+        "id": "tao_bon",
+        "name": "Táo bón",
+        "description": "Tình trạng đi tiêu ít hơn 3 lần/tuần, phân khô, cứng và khó đi ngoài.",
+        "symptoms": ["đi tiêu ít hơn bình thường", "phân khô, cứng", "khó khăn khi đi ngoài", "đau bụng", "chướng bụng", "cảm giác không đi hết phân"],
+        "medications": [
+            {"name": "Thuốc nhuận tràng (ví dụ: Lactulose, PEG)", "usage": "Làm mềm phân và kích thích nhu động ruột.", "note": "Sử dụng theo hướng dẫn, không lạm dụng."},
+            {"name": "Thuốc tạo khối (ví dụ: Psyllium)", "usage": "Tăng lượng chất xơ trong phân.", "note": "Uống nhiều nước khi dùng thuốc này."}
+        ],
+        "prevention": ["Ăn nhiều chất xơ (rau xanh, trái cây, ngũ cốc nguyên hạt)", "Uống đủ nước (2-2.5 lít/ngày)", "Tập thể dục thường xuyên", "Tạo thói quen đi tiêu đều đặn"]
+    },
+    {
+        "id": "mat_ngu",
+        "name": "Mất ngủ",
+        "description": "Khó khăn trong việc đi vào giấc ngủ, duy trì giấc ngủ hoặc thức dậy quá sớm, dẫn đến cảm giác mệt mỏi vào ban ngày.",
+        "symptoms": ["khó ngủ", "thức giấc nhiều lần trong đêm", "thức dậy quá sớm", "mệt mỏi ban ngày", "khó tập trung", "dễ cáu kỉnh"],
+        "medications": [
+            {"name": "Thuốc an thần, gây ngủ (ví dụ: Zolpidem, Benzodiazepines)", "usage": "Giúp dễ ngủ và duy trì giấc ngủ. Chỉ dùng trong thời gian ngắn và theo chỉ định bác sĩ.", "note": "Có nguy cơ phụ thuộc thuốc."},
+            {"name": "Thực phẩm chức năng hỗ trợ giấc ngủ (ví dụ: Melatonin, các loại thảo dược)", "usage": "Hỗ trợ cải thiện giấc ngủ.", "note": "Tham khảo ý kiến bác sĩ trước khi dùng."}
+        ],
+        "prevention": ["Tạo thói quen ngủ lành mạnh (ngủ đúng giờ, không dùng thiết bị điện tử trước khi ngủ)", "Tránh caffeine và rượu bia trước khi ngủ", "Tập thể dục đều đặn (không quá gần giờ ngủ)", "Tạo môi trường phòng ngủ thoải mái, tối và yên tĩnh"]
+    }
+]

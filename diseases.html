@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh sách Bệnh - Trợ lý Sức khỏe AI</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">Sức Khỏe AI</a>
+            <nav>
+                <div class="hamburger">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Chẩn đoán</a></li>
+                    <li><a href="diseases.html">Danh sách Bệnh</a></li>
+                    <li><a href="faq.html">Hỏi & Đáp</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="hero">
+            <h1>Danh sách các Bệnh thường gặp</h1>
+            <p>Tìm kiếm thông tin chi tiết về các bệnh, triệu chứng, thuốc và cách phòng ngừa.</p>
+        </section>
+
+        <section class="search-section card">
+            <input type="text" id="diseaseSearch" placeholder="Tìm kiếm bệnh, triệu chứng hoặc thuốc...">
+        </section>
+
+        <section id="diseaseList" class="disease-list">
+            </section>
+        <p id="noResults" class="no-results-message hidden">Không tìm thấy kết quả phù hợp.</p>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Trợ lý Sức khỏe AI. Mọi thông tin chỉ mang tính tham khảo, không thay thế chẩn đoán y tế.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
